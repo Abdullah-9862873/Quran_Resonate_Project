@@ -1,0 +1,84 @@
+.findTeacher-parent {
+  @apply mt-[10vh] h-[60vh] pt-[80px] flex flex-col items-center;
+}
+
+.input-field-parent {
+  @apply h-[30vh] w-[80%] mx-[70px];
+}
+
+.input-field-and-icons {
+  @apply flex relative;
+}
+
+.searchbar-input {
+  @apply w-full h-[7vh] px-4 pr-[70px] rounded-md border border-gray-300; /* Increased padding to accommodate icons */
+  position: relative;
+}
+
+.search, .filter {
+  @apply absolute top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer;
+}
+
+.search {
+  right: 10px;
+}
+
+.filter {
+  right: 40px;
+}
+
+.filter-clicked {
+  @apply mt-6 w-[50%] max-w-md bg-white rounded-lg p-6 shadow-md mr-[48vw];
+}
+
+.filter-clicked h3 {
+  @apply text-xl font-semibold mb-4;
+}
+
+.filter-clicked h5 {
+  @apply text-lg font-medium mt-4 mb-2;
+}
+
+.filter-clicked select {
+  @apply w-full px-3 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.filter-clicked input[type="radio"] {
+  @apply mr-2;
+}
+
+.filter-clicked label {
+  @apply text-base font-medium text-gray-700;
+}
+
+.buttons {
+  @apply flex justify-between mt-6;
+}
+
+.buttons button {
+  @apply px-4 py-2 rounded-md font-medium transition duration-300 ease-in-out;
+}
+
+.buttons button:first-child {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+.buttons button:last-child {
+  @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+.teachers-list {
+  @apply mt-6 w-[80%] max-w-md;
+}
+
+.teacher-card {
+  @apply mb-4 p-4 border border-gray-300 rounded-lg shadow-md;
+}
+
+.teacher-card h4 {
+  @apply text-lg font-semibold mb-2;
+}
+
+.teacher-card p {
+  @apply text-base text-gray-700;
+}

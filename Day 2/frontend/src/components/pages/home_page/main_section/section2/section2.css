@@ -1,0 +1,30 @@
+.section2-parent {
+  @apply mt-[100px];
+}
+.section2-parent h1 {
+  @apply flex justify-center items-center text-5xl font-bold mb-[17px];
+}
+.section2-parent p {
+  @apply flex justify-center items-center font-light text-2xl mb-[10px];
+}
+.section2-parent .image-bundle {
+  @apply flex justify-center items-center mx-[70px];
+}
+.section2-parent .image-bundle img {
+  @apply m-[10px];
+}
+.section2-parent .image-bundle .img1,
+.section2-parent .image-bundle .img2,
+.section2-parent .image-bundle .img3 {
+  @apply relative;
+}
+.section2-parent .image-bundle .img1 h2,
+.section2-parent .image-bundle .img2 h2,
+.section2-parent .image-bundle .img3 h2 {
+  @apply absolute top-[59%] left-[6%] w-[250px] font-semibold text-[22px] leading-[26px] text-white;
+}
+.section2-parent .image-bundle .img1 p,
+.section2-parent .image-bundle .img2 p,
+.section2-parent .image-bundle .img3 p {
+  @apply absolute top-[71%] left-[6%] w-[270px] font-normal text-[17px] leading-[18px] text-white;
+}
