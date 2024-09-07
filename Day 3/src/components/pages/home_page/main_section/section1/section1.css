@@ -1,0 +1,15 @@
+
+  .section1-parent {
+    @apply flex;
+  }
+  
+  .section1-parent h1 {
+    @apply text-5xl font-bold m-[20px];
+  }
+  .section1-parent p {
+    @apply font-normal font-light text-2xl leading-[38px] w-4/5 m-5;
+  }
+   .section1-parent div {
+    width: 50%;
+  }
+  

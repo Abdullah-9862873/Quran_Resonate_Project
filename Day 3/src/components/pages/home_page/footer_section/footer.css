@@ -1,0 +1,17 @@
+/* footer.css */
+.parent {
+    @apply bg-[#f8f8f8] h-[20vh] flex items-center justify-center;
+  }
+  
+  .footer {
+    @apply flex items-center w-[100%] justify-between;
+  }
+  
+  .img img {
+    @apply max-w-[200px];
+  }
+  
+  .social-icons {
+    @apply flex gap-[15px] mt-[10px] justify-center;
+  }
+  
