@@ -1,0 +1,24 @@
+.section5-parent {
+    @apply mt-[100px] mb-[100px] flex;
+  }
+  
+  .section5-parent h1 {
+    @apply text-5xl font-bold m-[20px];
+  }
+  
+  .section5-parent p {
+    @apply font-normal font-light text-2xl leading-[38px] w-4/5 m-5;
+  }
+  
+  .section5-parent div {
+    @apply w-1/2;
+  }
+  
+  .apply-button {
+    @apply flex justify-center items-center px-[15px] py-[30px] ml-5 gap-[10px] w-[160px] h-[50px] rounded-[6px] bg-[#2A76E8] text-[14px] leading-[18px] mt-[23px] text-[#fff] transition-shadow duration-300 ease-in-out;
+  }
+  
+  .apply-button:hover {
+    @apply shadow-lg;
+  }
+  
