@@ -1,0 +1,48 @@
+.section3-parent {
+  @apply mt-[150px] mb-[120px];
+}
+.section3-parent h2 {
+  @apply flex justify-center items-center text-5xl font-bold mb-[17px] h-[30%];
+}
+.section3-parent .para {
+  @apply flex justify-center items-center;
+}
+.section3-parent .para p {
+  @apply text-center font-light text-2xl leading-[38px] mb-[10px] w-[50%];
+}
+
+.section3-parent .cards-parent .cards {
+  @apply flex m-[15px] flex-wrap justify-between;
+}
+.section3-parent .cards-parent .cards .card1,
+.section3-parent .cards-parent .cards .card2,
+.section3-parent .cards-parent .cards .card3,
+.section3-parent .cards-parent .cards .card4,
+.section3-parent .cards-parent .cards .card5,
+.section3-parent .cards-parent .cards .card6 {
+  @apply h-[220px] w-[30%] mb-[20px];
+}
+.section3-parent .cards-parent .cards .card1 p,
+.section3-parent .cards-parent .cards .card2 p,
+.section3-parent .cards-parent .cards .card3 p,
+.section3-parent .cards-parent .cards .card4 p,
+.section3-parent .cards-parent .cards .card5 p,
+.section3-parent .cards-parent .cards .card6 p {
+  @apply text-center;
+}
+.section3-parent .cards-parent .cards .card1 h3,
+.section3-parent .cards-parent .cards .card2 h3,
+.section3-parent .cards-parent .cards .card3 h3,
+.section3-parent .cards-parent .cards .card4 h3,
+.section3-parent .cards-parent .cards .card5 h3,
+.section3-parent .cards-parent .cards .card6 h3 {
+  @apply text-center text-[22px] font-semibold;
+}
+.section3-parent .cards-parent .cards .card1 .image,
+.section3-parent .cards-parent .cards .card2 .image,
+.section3-parent .cards-parent .cards .card3 .image,
+.section3-parent .cards-parent .cards .card4 .image,
+.section3-parent .cards-parent .cards .card5 .image,
+.section3-parent .cards-parent .cards .card6 .image {
+  @apply flex justify-center items-center;
+}

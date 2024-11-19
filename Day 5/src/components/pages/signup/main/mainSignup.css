@@ -1,0 +1,79 @@
+.main-signup-page {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.main-signup-page h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.main-signup-page .description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.main-signup-page .signup-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.main-signup-page .signup-box {
+  width: 280px;
+  height: 340px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.main-signup-page .signup-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main-signup-page .signup-box-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.main-signup-page .student .signup-box-content {
+  background-color: #f6f9fe;
+}
+
+.main-signup-page .teacher .signup-box-content {
+  background-color: #fcf1f1;
+}
+
+.main-signup-page .signup-box-content img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.main-signup-page .signup-box-content h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-signup-page .signup-box-content p {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.main-signup-page .note {
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #666;
+}

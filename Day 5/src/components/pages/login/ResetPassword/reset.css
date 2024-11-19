@@ -1,0 +1,77 @@
+.reset-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.reset-page .reset-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.reset-page .reset-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reset-page .reset-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reset-page .form-label {
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
+.reset-page .form-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.reset-page .required {
+  color: red;
+}
+
+.reset-page .btn-reset {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  align-self: center;
+  width: fit-content;
+}
+
+.reset-page .btn-reset:hover {
+  background: linear-gradient(45deg, #0056b3, #003d80);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.reset-page .btn-reset:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.reset-page .btn-reset:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}

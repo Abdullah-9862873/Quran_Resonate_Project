@@ -1,0 +1,193 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  @apply flex flex-col min-h-screen;
+  position: relative;
+}
+
+.main {
+  @apply mx-[60px] my-[80px] flex-1;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 100px); 
+}
+
+.input-field-parent {
+  @apply h-[15vh] w-[80%] mx-[70px];
+}
+
+.input-field-and-icons {
+  @apply flex relative;
+}
+
+.searchbar-input {
+  @apply w-full h-[7vh] px-4 pr-[70px] rounded-md border border-gray-200;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search, .filter {
+  @apply absolute top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer;
+}
+
+.search {
+  right: 10px;
+}
+
+.filter {
+  right: 40px;
+}
+
+.toggle_options {
+  @apply bg-white border border-gray-300 rounded-lg mt-4 p-4 shadow-lg;
+  position: absolute;
+  z-index: 10;
+  width: 40%;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.filter-section {
+  @apply flex flex-col gap-4;
+}
+
+
+/* Title Styling */
+.filter-title {
+  @apply text-xl font-semibold text-gray-800 mb-4;
+}
+
+/* Language Section */
+.language-section {
+  @apply flex flex-col gap-2;
+}
+
+.language-label {
+  @apply text-sm font-medium text-gray-600;
+}
+
+/* Dropdown Toggle */
+.language-dropdown-toggle {
+  @apply flex justify-between items-center p-3 bg-white border border-gray-300 rounded-md cursor-pointer shadow-sm;
+  transition: background-color 0.2s;
+}
+
+.language-dropdown-toggle:hover {
+  @apply bg-gray-100;
+}
+
+/* Dropdown Arrow */
+.dropdown-arrow {
+  @apply text-gray-500 ml-2;
+}
+
+/* Dropdown Menu */
+.language-dropdown {
+  @apply mt-2 bg-white border border-gray-300 rounded-md shadow-lg p-2 z-10 overflow-y-auto;
+  max-height: 200px;
+}
+
+.language-option {
+  @apply p-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer rounded-md transition-colors;
+}
+
+
+.range_and_level_parent {
+  @apply flex justify-between gap-4;
+}
+
+.pay_range, .level_range {
+  @apply mt-2 flex flex-col gap-1;
+}
+
+.radio-option {
+  @apply flex items-center mb-2;
+}
+
+label {
+  @apply ml-2 text-gray-600 cursor-pointer;
+}
+
+input[type="radio"] {
+  @apply cursor-pointer;
+}
+
+
+.slider-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  z-index: 1000; 
+}
+
+.title {
+  @apply text-lg font-bold;
+}
+
+.jobs {
+  @apply cursor-pointer flex-col items-center gap-[15px]; 
+  margin: 0 auto;
+}
+
+.casing {
+  @apply w-[56rem] h-[9rem] flex justify-between items-center border border-gray-300 rounded-md shadow-sm p-4 transition-transform duration-200 hover:scale-105;
+  margin: 0 auto; 
+}
+
+.section2 {
+  @apply flex justify-between items-center mt-2;
+}
+
+.priceLevelParent {
+  @apply flex gap-4;
+}
+
+.price, .level {
+  @apply flex items-center;
+}
+
+.dollarImage, .levelImage {
+  @apply text-lg mr-1;
+}
+
+
+/* Buttons Styles */
+.buttons {
+  @apply flex justify-between mt-6;
+}
+
+.buttons button {
+  @apply px-4 py-2 rounded-md font-medium transition duration-300 ease-in-out;
+}
+
+.buttons button:first-child {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300 shadow-sm;
+}
+
+.buttons button:last-child {
+  @apply bg-blue-500 text-white hover:bg-blue-600 shadow-md;
+}
+
+@media (max-width: 768px) {
+  .toggle_options {
+    @apply w-full;
+  }
+
+  .jobs {
+    @apply w-full; 
+  }
+
+  .casing {
+    @apply w-full; 
+  }
+}

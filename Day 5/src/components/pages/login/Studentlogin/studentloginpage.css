@@ -1,0 +1,117 @@
+.login-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.login-page h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.login-page p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.login-page .login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+}
+
+.login-page label {
+  font-weight: bold;
+}
+
+.login-page input[type="email"],
+.login-page input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  position: relative;
+}
+
+.login-page .password-container {
+  position: relative;
+}
+
+.login-page .password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.login-page .submit-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: auto;
+  max-width: fit-content;
+}
+
+.login-page .submit-button:hover {
+  background: linear-gradient(45deg, #0056b3, #003d80);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.login-page .submit-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-page .submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.login-page .required {
+  color: red;
+}
+
+.login-page .forgot-password,
+.login-page .create-account {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  text-align: left;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login-page .forgot-password:hover,
+.login-page .create-account:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.login-page .forgot-password,
+.login-page .create-account {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
