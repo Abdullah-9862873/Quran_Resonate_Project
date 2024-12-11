@@ -1,0 +1,195 @@
+.slider {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  height: 100vh;
+  background-color: #f9f9f9;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.3); 
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.main {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.arrow {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.arrow:hover,
+.arrow:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px); 
+  outline: none;
+}
+
+
+.job-data {
+  margin-top: 30px;
+}
+
+.job-data h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.job-data p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666; 
+}
+
+.student-details h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #8b8b8b;
+  margin: 20px 0;
+}
+
+.age-and-level {
+  display: flex;
+  gap: 30px; 
+}
+
+.enclosed-casing {
+  display: flex;
+  gap: 8px; 
+  align-items: center; 
+}
+
+.student-item h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #8b8b8b;
+  margin: 12px 0;
+}
+
+.time-slots-container {
+  display: flex; 
+  flex-direction: column; 
+  margin-top: 20px; 
+}
+
+.day-slot {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.day-name {
+  flex: 1; 
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.time-slots-container {
+  display: flex; 
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.time-slot-row {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.day-name {
+  flex: 1; 
+  text-align: center; 
+  font-weight: bold; 
+}
+
+.time-range {
+  flex: 1; 
+  font-size: 12px;
+  color: #fff; 
+  background-color: #007bff; 
+  border-radius: 5px; 
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.time-slot-row:not(:last-child) {
+  border-bottom: 1px solid #ccc; 
+  margin-bottom: 10px;
+}
+
+
+.terms-heading {
+  display: flex;
+  gap: 50px;
+}
+
+.terms {
+  font-weight: 500; 
+  font-size: 20px;
+  line-height: 26px;
+  margin: 5px 0 5px 3px;
+  color: #333;
+}
+
+.terms-description {
+  display: flex;
+  gap: 10px; 
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.dollar-logo,
+.office-logo,
+.timer-logo {
+  font-size: 20px;
+  color: #2ecc71;
+}
+
+.apply-button-container {
+  display: flex;
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.apply-button {
+  background-color: #28a745; 
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #218838;
+}

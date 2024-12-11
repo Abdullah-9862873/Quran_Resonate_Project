@@ -1,0 +1,110 @@
+.findTeacher-parent {
+  @apply min-h-screen pt-[80px] flex flex-col items-center;
+}
+
+.input-field-parent {
+  @apply h-[15vh] w-[80%] mx-[70px];
+}
+
+.input-field-and-icons {
+  @apply flex relative;
+}
+
+.searchbar-input {
+  @apply w-full h-[7vh] px-4 pr-[70px] rounded-md border border-gray-300; /* Increased padding to accommodate icons */
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search, .filter {
+  @apply absolute top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer;
+}
+
+.search {
+  right: 10px;
+}
+
+.filter {
+  right: 40px;
+}
+
+.filter-clicked {
+  @apply mt-6 w-[50%] max-w-md bg-white rounded-lg p-6 mr-[30rem] shadow-lg border border-gray-200;
+}
+
+.filter-clicked h3 {
+  @apply text-xl font-semibold mb-4;
+}
+
+.filter-clicked h5 {
+  @apply text-lg font-medium mt-4 mb-2;
+}
+
+.filter-clicked select {
+  @apply w-full px-3 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.filter-clicked input[type="radio"] {
+  @apply mr-2;
+}
+
+.filter-clicked label {
+  @apply text-base font-medium text-gray-700;
+}
+
+.buttons {
+  @apply flex justify-between mt-6;
+}
+
+.buttons button {
+  @apply px-4 py-2 rounded-md font-medium transition duration-300 ease-in-out;
+}
+
+.buttons button:first-child {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300 shadow-sm;
+}
+
+.buttons button:last-child {
+  @apply bg-blue-500 text-white hover:bg-blue-600 shadow-md;
+}
+
+.teachers-list {
+  @apply mt-6 w-[80%] max-w-[50rem] flex flex-wrap justify-center gap-[20px];
+}
+
+.teacher-card {
+  @apply bg-white border border-[#e5e9eb] rounded-lg shadow-lg p-4 text-center transition-shadow duration-300 ease-in-out;
+  max-width: 250px; 
+  width: 100%;
+}
+
+
+.teacher-card:hover {
+  box-shadow: 0 4px 20px rgba(154, 175, 186, 0.5); 
+  transform: translateY(-2px);
+}
+
+
+.teacher-card img {
+  @apply w-[100px] h-[100px] rounded-full object-cover mx-auto mb-[15px] border border-gray-300 shadow-md;
+}
+
+.teacher-card h4 {
+  @apply text-[18px] font-bold leading-[24px] text-[#333] mb-[8px];
+}
+
+.teacher-card p {
+  @apply text-[14px] leading-[18px] font-medium text-[#666] mb-[10px];
+}
+
+.teacher-card .price {
+  @apply text-[16px] font-semibold text-[#009688] mb-[15px];
+}
+
+.teacher-card button {
+  @apply py-[10px] px-[20px] w-full h-[40px] border border-[#009688] text-[#009688] rounded-[8px] font-medium text-[14px] bg-white hover:bg-[#009688] hover:text-white transition-colors duration-300 ease-in-out;
+}
+
+.no-results-message {
+  @apply mt-6 text-center text-gray-500;
+}

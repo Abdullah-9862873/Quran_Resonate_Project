@@ -1,0 +1,173 @@
+/* Breakpoint 1110px to onwards */
+
+.navbar-parent {
+    @apply ml-[20px] mr-[20px] mt-[30px] mb-[30px] flex justify-between;
+  }
+  
+  .logo-image {
+    @apply w-[12rem];
+  }
+  
+  .pages {
+    @apply w-[55rem] text-[14px];
+  }
+  
+  .pages-ul {
+    @apply flex justify-evenly;
+  }
+  
+  .pages-ul-li {
+    @apply relative;
+  }
+  
+  .pages-ul-li-underliningItems {
+    @apply absolute left-0 bottom-0 w-0 h-[0.9px] bg-black transition-all duration-300 ease-in-out group-hover:w-full;
+  }
+  
+  .hamburger {
+    @apply hidden mt-[1.7rem] relative z-[100];
+  }
+  
+  .icon-wrapper {
+    @apply relative flex items-center justify-center w-8 h-8;
+  }
+  
+  .hamburger-icon,
+  .close-icon {
+    @apply absolute transition-opacity transition-transform duration-300 ease-in-out;
+  }
+  
+  .hamburger-icon {
+    @apply opacity-100;
+  }
+  
+  .close-icon {
+    @apply opacity-0 transform rotate-45;
+  }
+  
+  .icon-wrapper.open .hamburger-icon {
+    @apply opacity-0 transform -rotate-45;
+  }
+  
+  .icon-wrapper.open .close-icon {
+    @apply opacity-100 transform rotate-0;
+  }
+  
+  .hamburger-menu {
+    @apply absolute top-[6rem] left-0 w-full bg-white z-[50] opacity-0 max-h-0 overflow-hidden transition-all duration-300 ease-out;
+  }
+  
+  .hamburger-menu.open {
+    @apply opacity-100 max-h-[500px];
+  }
+
+  .post-job-btn {
+    @apply bg-blue-500 text-white px-4 py-2 rounded-lg font-semibold transition-all duration-300 ease-in-out shadow-md;
+  }
+  
+  .post-job-btn:hover {
+    @apply bg-blue-600 shadow-lg transform scale-105;
+  }
+  
+  /* Icons container (messages and notifications) */
+.icons-container {
+  @apply flex items-center gap-5;
+}
+
+.icon-link {
+  @apply text-black text-[1.6rem] cursor-pointer transition-colors duration-300 ease-in-out;
+}
+
+.icon-link:hover {
+  @apply text-blue-500;
+}
+
+.icon {
+  @apply text-[1.8rem];
+}
+
+/* Profile picture container */
+.profile-picture-container {
+  @apply w-[40px] h-[40px] rounded-full bg-gray-300 overflow-hidden flex justify-center items-center;
+}
+
+.profile-picture {
+  @apply w-full h-full object-cover;
+}
+
+.empty-profile-picture {
+  @apply w-full h-full rounded-full bg-gray-200;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 90px; /* Adjust this value to move the dropdown further down */
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.profile-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-dropdown ul li {
+  margin: 10px 0;
+}
+
+.profile-dropdown ul li button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.profile-dropdown ul li button:hover {
+  color: #007bff;
+}
+
+  
+
+  /* ---------------- Responsiveness ---------------- */
+
+@media (min-width: 1050px) {
+    .pages {
+      @apply mt-[1.7rem];
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1049px) {
+    .pages {
+      @apply mt-[1.4rem];
+    }
+  }
+  
+  @media (min-width: 771px) and (max-width: 991px) {
+    .pages {
+      @apply mt-[1.1rem];
+    }
+  }
+  @media (max-width: 770px) {
+    .icons-container {
+      @apply hidden;
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 770px) {
+    .pages {
+      @apply hidden;
+    }
+    .hamburger {
+      @apply block;
+    }
+  }
+
+  

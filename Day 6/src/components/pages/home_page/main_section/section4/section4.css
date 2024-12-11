@@ -1,0 +1,56 @@
+.section4-parent {
+  @apply mb-[120px];
+}
+
+.section4-parent .heading {
+  @apply flex justify-between items-center;
+}
+
+.section4-parent .heading h2 {
+  @apply text-5xl font-bold mb-[17px];
+}
+
+.section4-parent .heading .button-outer-div {
+  @apply flex justify-center items-center;
+}
+
+.section4-parent .heading button {
+  @apply flex justify-center items-center py-[15px] px-[30px] w-auto h-[49px] border border-[#bdd4f7] rounded-[6px] font-normal text-[14px] leading-[18px] bg-[#f6f9fe] text-[#2A76E8] transition-shadow duration-300 ease-in-out;
+}
+
+.section4-parent .heading button:hover {
+  @apply shadow-lg bg-[#2A76E8] text-[#fff];
+}
+
+
+.profiles {
+    @apply pt-[40px] px-[20px] flex flex-wrap justify-center gap-[20px];
+  }
+  
+  .profile-card {
+    @apply bg-white border border-[#e5e9eb] pb-[20px] px-[20px] pt-[20px] text-center mb-[20px] mx-[10px] mt-[0px] rounded-[16px] shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out bg-[#f8f8f8];
+  }
+  
+  .profiles img {
+    @apply w-[100px] h-[100px] rounded-full object-cover mx-auto mb-[15px];
+  }
+  
+  .profiles .name {
+    @apply text-[20px] font-bold leading-[28px] text-[#333] mb-[8px];
+  }
+  
+  .profiles .languages {
+    @apply text-[14px] leading-[18px] font-medium text-[#666] mb-[10px];
+  }
+  
+  .profile-card div:nth-child(4) {
+    @apply text-[16px] font-semibold text-[#009688] mb-[15px];
+  }
+  
+  .profile-card button {
+    @apply py-[10px] px-[20px] w-full h-[40px] border border-[#009688] text-[#009688] rounded-[8px] font-medium text-[14px] bg-white hover:bg-[#009688] hover:text-white transition-colors duration-300 ease-in-out;
+  }
+  
+  .borderline{
+    @apply border-b-2 border-[#E5E9EB];
+  }
