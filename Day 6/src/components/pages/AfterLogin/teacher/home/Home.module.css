@@ -1,0 +1,138 @@
+/* Section 1 Styles */
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section1 {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack the profile photo and cover photo */
+  height: 16rem; /* Adjusted height for the cover photo */
+}
+
+.coverPhoto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #d1d5db; /* Gray-300 background color */
+}
+
+.coverPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profilePhoto {
+  margin-top: -5rem; /* Adjusted to make the photo appear above the name and role */
+  width: 12rem; /* Adjusted size for more impact */
+  height: 12rem; /* Adjusted size */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Ensures the profile photo is above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Apply border-radius directly on the image */
+.profilePhoto img {
+  width: 100%; /* Full width inside the container */
+  height: 100%; /* Full height inside the container */
+  border-radius: 50% !important; /* Apply border-radius directly on image */
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+/* Section 2 Styles */
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Space between profile photo and text */
+}
+
+.userInfo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.userInfo h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.userInfo h4 {
+  font-size: 18px;
+  color: #777; /* Adjust color for role text */
+  margin: 5px 0;
+}
+
+/* Section 3 Styles */
+.homeSection3 {
+  display: flex; /* Ensure flex layout */
+  gap: 2rem; /* Space between the left and right content */
+  padding: 2rem;
+  width: 100%; /* Ensure it's full width */
+}
+
+.homeLeftDisplay {
+  width: 20%; /* Ensure the left side has a fixed width */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.homeRightDisplay {
+  flex: 1; /* Take up the remaining space */
+  background: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Soft shadow around the right display */
+  border-radius: 12px; /* Rounded corners for a more modern look */
+  border: 2px solid #00aaff; /* Beautiful light blue border color */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.homeRightDisplay:hover {
+  border-color: #0088cc; /* Darker blue border on hover for interaction */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow effect on hover */
+}
+
+/* Home option styles */
+.homeOption {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s;
+}
+
+.homeActive {
+  background-color: #e0f7ff;
+}
+
+.homeOption:hover {
+  background-color: #e9ecef;
+}
+
+.homeOption img {
+  width: 24px;
+  height: 24px;
+}
+
+.homeOption span {
+  font-size: 1rem;
+}
+
+/* Vertical divider */
+.homeVerticalDivider {
+  border: none;
+  border-left: 2px solid #e0e0e0;
+  margin: 0 1rem;
+}

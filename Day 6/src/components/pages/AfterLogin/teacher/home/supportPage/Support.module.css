@@ -1,0 +1,55 @@
+/* Main container for the support section */
+.supportContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Link styling */
+.supportLink {
+  display: block;
+  text-decoration: none;
+}
+
+/* Image container styling */
+.supportImageContainer {
+  position: relative;
+  width: 80%;
+  height: 60vh; /* Adjust the height of the image container */
+}
+
+/* Image styling */
+.supportImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure the image covers the container without distorting */
+}
+
+/* Text styling */
+.supportText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333; /* Changed the text color to a darker shade */
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 0, 0, 0.5); /* Added semi-transparent background for better contrast */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Heading styling inside the text box */
+.supportText h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #f7f7f7; /* Lighter color for the heading */
+}
+
+/* Paragraph styling inside the text box */
+.supportText p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #f7f7f7; /* Lighter color for the paragraph */
+}

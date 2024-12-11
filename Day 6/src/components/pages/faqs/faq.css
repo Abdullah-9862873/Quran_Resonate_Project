@@ -1,0 +1,138 @@
+.faq .main {
+    margin-left: 33px;
+    margin-top: 80px;
+}
+
+.faq .heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.faq .questions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.faq .question {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq .question-header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    border-radius: inherit;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq .question-header:hover {
+    background-color: #e0e0e0;
+}
+
+.faq .answer {
+    height: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    transition: height 0.4s ease-out, padding 0.4s ease-out;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.faq .answer.expanded {
+    height: auto;
+    padding: 16px 24px;
+}
+
+.faq .student-steps-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 0;
+}
+
+.faq .step,
+.faq .step-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 180px; /* Fixed width for each step */
+}
+
+.faq .step h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.faq .step-vertical h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.faq .step p {
+    font-size: 14px;
+    margin: 4px 0; /* Reduced margin for closer spacing within each step */
+}
+
+.faq .step-vertical {
+    gap: 24px; /* Adds a larger gap between the two sections in the vertical layout */
+}
+
+.faq .step-vertical .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; /* Closer spacing within each sub-section */
+    margin-bottom: 16px; /* Larger gap between the two main sections */
+}
+
+.faq .step-icon {
+    font-size: 36px;
+}
+
+.faq .blue {
+    color: #007bff; /* Blue color for icons */
+}
+
+.faq .arrow-icon-horizontal,
+.faq .arrow-icon-vertical {
+    width: 36px; /* Slightly larger width for arrows */
+    height: 230px;
+}
+
+/* Additional adjustments for spacing */
+.faq .arrow-icon-horizontal {
+    margin: 0 16px; /* More spacing between horizontal arrows and content */
+}
+
+.faq .arrow-icon-vertical {
+    margin: 16px 0; /* More spacing for vertical arrows */
+}
+
+.faq .dimmed {
+    color: #616161;
+}
+
+.faq .step h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.faq .step p {
+    font-size: 14px;
+    margin: 8px 0;
+}

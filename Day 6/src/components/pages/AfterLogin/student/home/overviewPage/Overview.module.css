@@ -1,0 +1,84 @@
+/* Container for the overview section */
+.homeTabButtons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .homeTab {
+    background: #f1f5f9;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+  
+  .homeTab.homeActive {
+    background: #e0f7ff;
+    border-color: #007bff;
+  }
+  
+  .homeQuickAction {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .homeCard {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  /* Makes the card clickable */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .homeCard:hover {
+    transform: translateY(-5px); /* Slides the card up slightly */
+  }
+  
+  .homeIcon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cardTitle {
+    margin-bottom: 0.5rem;
+  }
+  
+  .homeCard p {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  
+  .homeCard a {
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .homeCard a:hover {
+    text-decoration: none; /* Optional: Keep no underline on hover */
+  }
+  
+  /* Styles for the headings */
+  
+  /* Heading 3 for "Notes" and "Quick Action" */
+  .heading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Quick Action Cards Section */
+  .cardTitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  

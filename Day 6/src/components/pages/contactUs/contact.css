@@ -1,0 +1,77 @@
+.contact-page{
+  margin-left: 20px;
+}
+.contact-page .main {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-page h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-page .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-page label {
+  font-weight: bold;
+}
+
+.contact-page select,
+.contact-page input,
+.contact-page textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.contact-page textarea {
+  resize: none;
+}
+
+.contact-page .submit-button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: auto;
+  max-width: fit-content;
+}
+
+.contact-page .submit-button:hover {
+  background: linear-gradient(45deg, #0056b3, #003d80);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-page .submit-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-page .submit-button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.contact-page .required {
+  color: red;
+}

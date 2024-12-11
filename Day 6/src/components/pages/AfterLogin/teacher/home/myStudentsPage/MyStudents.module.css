@@ -1,0 +1,72 @@
+/* Main container for the teachers page */
+.myTeachersContainer {
+  padding: 20px;
+}
+
+/* Scoped Heading for the page title ("My Teachers") */
+.myTeachersContainer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 8px;
+}
+
+/* List of teachers */
+.teachersList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Individual teacher card */
+.teacherCard {
+  background-color: #f9f9f9;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for teacher cards */
+.teacherCard:hover {
+  transform: translateY(-5px); /* Moves the card up */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a stronger shadow */
+}
+
+/* Teacher's profile photo */
+.teacherPhoto {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #fff; /* Optional: add a white border to make the photo stand out */
+}
+
+/* Teacher details section */
+.teacherDetails {
+  margin-top: 10px;
+}
+
+/* Heading for teacher's name */
+.teacherDetails h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: capitalize; /* Capitalizes first letter of each word */
+}
+
+/* Styling for other details (location, languages, etc.) */
+.teacherDetails p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.teacherDetails p:last-child {
+  font-style: italic;
+  color: #555;
+}
